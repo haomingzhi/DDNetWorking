@@ -8,7 +8,7 @@
 
 #import "DDNet.h"
 #import "NSString+WJ_md5Str.h"
-#import <AFNetworking.h>
+#import <AFNetworking/AFNetworking.h>
 
 #define encryptionKey @"JF0XMw6XhwU8jXHH"
 @implementation DDNet

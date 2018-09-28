@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC 测试使用
-                   DESC
+  s.description  = '测试使用afnetwork'
 
   s.homepage     = "https://github.com/haomingzhi/DDNetWorking"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -64,10 +63,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-    s.platform     = :ios, "0.0"
+    s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+   s.ios.deployment_target = "7.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -90,9 +89,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Source", "Source/**/*.{h,m}"
-  s.exclude_files = "Source"
-
+  s.source_files  = "DDNetWorking", "DDNetWorking/**/*.{h,m}"
+  s.exclude_files = "DDNetWorking/Exclude"
+  s.public_header_files = "#{s.name}/#{s.name}.h",
+                          "#{s.name}/**/*.h"
   # s.public_header_files = "Classes/**/*.h"
 
 
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #
 
   # s.framework  = "SomeFramework"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+  s.frameworks  = "UIKit","Foundation","Security"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -129,9 +129,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+   s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   s.dependency "AFNetworking"
+   s.dependency 'AFNetworking'
 
 end
