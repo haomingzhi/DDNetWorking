@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = '测试使用afnetwork'
 
-  s.homepage     = "https://github.com/haomingzhi/DDNetWorking"
+  s.homepage     = "https://github.com/haomingzhi/DDNetWorking.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
