@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		183C9508215DD0EA0087E449 /* DDNetWorking.h in Headers */ = {isa = PBXBuildFile; fileRef = 183C9506215DD0EA0087E449 /* DDNetWorking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		183C9511215DDB0C0087E449 /* DDNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 183C950F215DDB0C0087E449 /* DDNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		183C9512215DDB0C0087E449 /* DDNet.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C9510215DDB0C0087E449 /* DDNet.m */; };
+		183C9515215DDC1A0087E449 /* NSString+WJ_md5Str.m in Sources */ = {isa = PBXBuildFile; fileRef = 183C9513215DDC1A0087E449 /* NSString+WJ_md5Str.m */; };
+		183C9516215DDC1A0087E449 /* NSString+WJ_md5Str.h in Headers */ = {isa = PBXBuildFile; fileRef = 183C9514215DDC1A0087E449 /* NSString+WJ_md5Str.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8DBFA76C094F3111861E7E9D /* libPods-DDNetWorking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6251452A3A5C7D92F27B38C /* libPods-DDNetWorking.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		183C9503215DD0EA0087E449 /* DDNetWorking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDNetWorking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		183C9506215DD0EA0087E449 /* DDNetWorking.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDNetWorking.h; sourceTree = "<group>"; };
 		183C9507215DD0EA0087E449 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183C950F215DDB0C0087E449 /* DDNet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDNet.h; sourceTree = "<group>"; };
+		183C9510215DDB0C0087E449 /* DDNet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDNet.m; sourceTree = "<group>"; };
+		183C9513215DDC1A0087E449 /* NSString+WJ_md5Str.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+WJ_md5Str.m"; sourceTree = "<group>"; };
+		183C9514215DDC1A0087E449 /* NSString+WJ_md5Str.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+WJ_md5Str.h"; sourceTree = "<group>"; };
+		2439C0D7EB73E68250D3256C /* Pods-DDNetWorking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDNetWorking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDNetWorking/Pods-DDNetWorking.debug.xcconfig"; sourceTree = "<group>"; };
+		87377D201DEEAEBE5FBB17A6 /* Pods-DDNetWorking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDNetWorking.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDNetWorking/Pods-DDNetWorking.release.xcconfig"; sourceTree = "<group>"; };
+		A6251452A3A5C7D92F27B38C /* libPods-DDNetWorking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDNetWorking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DBFA76C094F3111861E7E9D /* libPods-DDNetWorking.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +45,8 @@
 			children = (
 				183C9505215DD0EA0087E449 /* DDNetWorking */,
 				183C9504215DD0EA0087E449 /* Products */,
+				483D74E281F0C65D828B72C0 /* Pods */,
+				C9C78737E948900412E23F55 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +61,39 @@
 		183C9505215DD0EA0087E449 /* DDNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				183C950E215DDAE80087E449 /* Source */,
 				183C9506215DD0EA0087E449 /* DDNetWorking.h */,
 				183C9507215DD0EA0087E449 /* Info.plist */,
 			);
 			path = DDNetWorking;
+			sourceTree = "<group>";
+		};
+		183C950E215DDAE80087E449 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				183C950F215DDB0C0087E449 /* DDNet.h */,
+				183C9510215DDB0C0087E449 /* DDNet.m */,
+				183C9514215DDC1A0087E449 /* NSString+WJ_md5Str.h */,
+				183C9513215DDC1A0087E449 /* NSString+WJ_md5Str.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		483D74E281F0C65D828B72C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2439C0D7EB73E68250D3256C /* Pods-DDNetWorking.debug.xcconfig */,
+				87377D201DEEAEBE5FBB17A6 /* Pods-DDNetWorking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C9C78737E948900412E23F55 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6251452A3A5C7D92F27B38C /* libPods-DDNetWorking.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,6 +103,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183C9516215DDC1A0087E449 /* NSString+WJ_md5Str.h in Headers */,
+				183C9511215DDB0C0087E449 /* DDNet.h in Headers */,
 				183C9508215DD0EA0087E449 /* DDNetWorking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 183C950B215DD0EA0087E449 /* Build configuration list for PBXNativeTarget "DDNetWorking" */;
 			buildPhases = (
+				8DEDA46CA65935C2DFA545C8 /* [CP] Check Pods Manifest.lock */,
 				183C94FE215DD0EA0087E449 /* Sources */,
 				183C94FF215DD0EA0087E449 /* Frameworks */,
 				183C9500215DD0EA0087E449 /* Headers */,
@@ -125,11 +172,34 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8DEDA46CA65935C2DFA545C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DDNetWorking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		183C94FE215DD0EA0087E449 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				183C9512215DDB0C0087E449 /* DDNet.m in Sources */,
+				183C9515215DDC1A0087E449 /* NSString+WJ_md5Str.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +324,7 @@
 		};
 		183C950C215DD0EA0087E449 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2439C0D7EB73E68250D3256C /* Pods-DDNetWorking.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -263,6 +334,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DDNetWorking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -271,12 +343,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ddzx.DDNetWorking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		183C950D215DD0EA0087E449 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87377D201DEEAEBE5FBB17A6 /* Pods-DDNetWorking.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +359,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DDNetWorking/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ddzx.DDNetWorking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
