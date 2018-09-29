@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DDNetWorking"
-  s.version      = "1.0"
+  s.version      = "1.2"
   s.summary      = "测试使用"
 
   # This description is used to generate tags and improve search results.
