@@ -24,7 +24,7 @@
     [parDic setValue:[self backTimeinterval] forKey:@"time"];
     NSString *sign = [self backSign:nil andDic:parDic];
     [parDic setValue:sign forKey:@"sign"];
-    
+    //43534534545345345testdata
     AFHTTPSessionManager *manager = [self manager];
     [manager.requestSerializer setValue:@"iOS" forHTTPHeaderField:@"platform"];
     [manager GET:URL parameters:parDic progress:nil success:^(NSURLSessionDataTask *_Nonnull task, id _Nullable responseObject) {
